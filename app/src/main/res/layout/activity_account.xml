@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCream"
+    tools:context=".AccountActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70sp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/account_image"
+                android:layout_width="match_parent"
+                android:layout_height="250sp"
+                android:src="@drawable/young_people_jumping_together" />
+
+            <LinearLayout
+                android:id="@+id/account_actions"
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:layout_marginTop="20sp"
+                android:layout_below="@id/account_image"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/account_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20sp"
+                    android:layout_weight="1"
+                    android:src="@drawable/logout" />
+
+                <ImageView
+                    android:id="@+id/account_delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20sp"
+                    android:layout_weight="1"
+                    android:src="@drawable/delete" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/account_actions"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/logout_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/log_out"
+                    android:gravity="center"
+                    android:fontFamily="@font/fredoka_one"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorBlue"
+                    />
+
+                <TextView
+                    android:id="@+id/delete_account_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/delete_account"
+                    android:gravity="center"
+                    android:fontFamily="@font/fredoka_one"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorBlue"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/bottom_menu"
+        layout="@layout/bottom_app_menu" />
+
+</RelativeLayout>

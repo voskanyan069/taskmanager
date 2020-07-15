@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:weightSum="3"
+        android:background="@drawable/bottom_app_menu_layout"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageView
+            android:id="@+id/menu_home"
+            android:layout_width="match_parent"
+            android:layout_height="70sp"
+            android:padding="5sp"
+            android:layout_weight="1"
+            android:src="@drawable/home"
+            />
+
+        <ImageView
+            android:id="@+id/menu_add"
+            android:layout_width="match_parent"
+            android:layout_height="70sp"
+            android:padding="5sp"
+            android:layout_weight="1"
+            android:src="@drawable/add"
+            />
+
+        <ImageView
+            android:id="@+id/menu_user"
+            android:layout_width="match_parent"
+            android:layout_height="70sp"
+            android:padding="5sp"
+            android:layout_weight="1"
+            android:src="@drawable/account"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

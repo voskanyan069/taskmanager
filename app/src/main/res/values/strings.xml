@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Task Manager</string>
+    <string name="phone">Phone</string>
+    <string name="login_using_your">Login using your</string>
+    <string name="already_have_an_account">Already have an Account ?</string>
+    <string name="create_account">create account</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="need_new_account">Need new Account ?</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="send_verification_code">Send Verification Code</string>
+    <string name="check_verification_code">Check Verification Code</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="add_todo">Add ToDo</string>
+    <string name="log_out">LOG OUT</string>
+    <string name="delete_account">DELETE ACCOUNT</string>
+    <string name="edit_task">EDIT TASK</string>
+    <string name="delete_task">DELETE TASK</string>
+    <string name="save_changes">SAVE CHANGES</string>
+</resources>
